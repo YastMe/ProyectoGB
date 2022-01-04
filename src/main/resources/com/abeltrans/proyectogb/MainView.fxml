@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550" prefWidth="800" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abeltrans.proyectogb.controller.MainViewController">
+    <children>
+        <TableView fx:id="tvEntidades" layoutX="27.0" layoutY="64.0" prefHeight="398.0" prefWidth="754.0">
+            <columns>
+                <TableColumn fx:id="tcCodigo" prefWidth="171.0" text="Código de cliente" />
+            <TableColumn fx:id="tcArticulo" prefWidth="170.0" text="Código de artículo" />
+                <TableColumn fx:id="tcCtn" prefWidth="160.0" text="CTN" />
+            <TableColumn fx:id="tcFecha" prefWidth="252.0" text="Fecha" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtCtn" alignment="CENTER" layoutX="194.0" layoutY="492.0" onKeyTyped="#filtrarCodigo" promptText="CTN" />
+        <TextField fx:id="txtCodCliente" alignment="CENTER" layoutX="27.0" layoutY="492.0" onKeyTyped="#filtrarCodigo" promptText="Código de cliente" />
+        <Label layoutX="616.0" layoutY="496.0" text="Resultados totales: " />
+        <Label layoutX="270.0" layoutY="14.0" text="Gaspar Blanco Medicinal">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="lblTotal" layoutX="728.0" layoutY="496.0" prefHeight="17.0" prefWidth="53.0" textAlignment="CENTER" />
+      <Button fx:id="btnImportar" layoutX="362.0" layoutY="492.0" mnemonicParsing="false" onAction="#importFile" text="Importar" />
+      <Button fx:id="btnExportar" layoutX="445.0" layoutY="492.0" mnemonicParsing="false" onAction="#exportFile" text="Exportar" />
+      <Button fx:id="vaciarTabla" layoutX="523.0" layoutY="492.0" mnemonicParsing="false" onAction="#vaciar" text="Vaciar tabla" />
+    </children>
+</AnchorPane>
