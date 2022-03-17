@@ -72,7 +72,7 @@ public class Entidad {
     public boolean equals(Entidad e) {
         boolean equals;
 
-        if (e.getCodigo().equals(codigo) && e.getNumSerie().equals(numSerie)){
+        if (e.getNumSerie().equals(numSerie)){
             equals = true;
         }
         else{

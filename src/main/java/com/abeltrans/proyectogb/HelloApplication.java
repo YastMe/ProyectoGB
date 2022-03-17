@@ -3,8 +3,10 @@ package com.abeltrans.proyectogb;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
@@ -20,6 +22,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Buscador de botellas");
         stage.setScene(scene);
         stage.setResizable(false);
+        stage.getIcons().add(new Image("file:icon.png"));
         stage.show();
     }
 }

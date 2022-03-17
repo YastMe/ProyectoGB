@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -14,17 +15,22 @@
             <TableColumn fx:id="tcFecha" prefWidth="252.0" text="Fecha" />
             </columns>
         </TableView>
-        <TextField fx:id="txtCtn" alignment="CENTER" layoutX="194.0" layoutY="492.0" onKeyTyped="#filtrarCodigo" promptText="CTN" />
         <TextField fx:id="txtCodCliente" alignment="CENTER" layoutX="27.0" layoutY="492.0" onKeyTyped="#filtrarCodigo" promptText="Código de cliente" />
-        <Label layoutX="616.0" layoutY="496.0" text="Resultados totales: " />
-        <Label layoutX="270.0" layoutY="14.0" text="Gaspar Blanco Medicinal">
+        <TextField fx:id="txtCtn" alignment="CENTER" layoutX="194.0" layoutY="492.0" onKeyTyped="#filtrarCodigo" promptText="CTN" />
+      <DatePicker fx:id="txtDate" layoutX="355.0" layoutY="492.0" onAction="#fillTable" prefHeight="25.0" prefWidth="156.0" promptText="Fecha" />
+        <Label layoutX="597.0" layoutY="526.0" text="Resultados totales: " />
+        <Label layoutX="248.0" layoutY="14.0" text="Gaspar Blanco Medicinal SL">
             <font>
                 <Font size="24.0" />
             </font>
         </Label>
-      <Label fx:id="lblTotal" layoutX="728.0" layoutY="496.0" prefHeight="17.0" prefWidth="53.0" textAlignment="CENTER" />
-      <Button fx:id="btnImportar" layoutX="362.0" layoutY="492.0" mnemonicParsing="false" onAction="#importFile" text="Importar" />
-      <Button fx:id="btnExportar" layoutX="445.0" layoutY="492.0" mnemonicParsing="false" onAction="#exportFile" text="Exportar" />
-      <Button fx:id="vaciarTabla" layoutX="523.0" layoutY="492.0" mnemonicParsing="false" onAction="#vaciar" text="Vaciar tabla" />
+      <Label fx:id="lblTotal" alignment="CENTER" layoutX="709.0" layoutY="526.0" prefHeight="17.0" prefWidth="53.0" textAlignment="CENTER" />
+      <Button fx:id="btnImportar" layoutX="568.0" layoutY="492.0" mnemonicParsing="false" onAction="#importFile" text="Importar" />
+      <Button fx:id="btnExportar" layoutX="637.0" layoutY="492.0" mnemonicParsing="false" onAction="#exportFile" text="Exportar" />
+      <Button fx:id="vaciarTabla" layoutX="703.0" layoutY="492.0" mnemonicParsing="false" onAction="#vaciar" text="Vaciar tabla" />
+      <Label layoutX="371.0" layoutY="475.0" text="Fecha de caducidad" />
+      <Label layoutX="54.0" layoutY="475.0" text="Código de cliente" />
+      <Label layoutX="256.0" layoutY="475.0" text="CTN" />
+      <ImageView fx:id="logo" fitHeight="53.0" fitWidth="94.0" layoutX="54.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>

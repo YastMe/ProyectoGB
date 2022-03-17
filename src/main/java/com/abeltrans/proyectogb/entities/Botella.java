@@ -39,6 +39,15 @@ public class Botella {
         }
     }
 
+    public boolean isVacio(int codigo) {
+        if (codigo == vacio){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public String getDescripcion() {
         return descripcion;
     }
